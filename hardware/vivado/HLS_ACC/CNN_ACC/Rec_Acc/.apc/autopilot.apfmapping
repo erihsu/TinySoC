@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Rec_Acc.cpp" path="/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/src/Rec_Acc.cpp"/>
+    <originFiles name="Rec_Acc.h" path="/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/src/Rec_Acc.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

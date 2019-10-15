@@ -1,0 +1,156 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri Jul 12 10:28:30 2019
+| Host         : xuzhenyu-pc running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_control_sets -verbose -file lenet5_control_sets_placed.rpt
+| Design       : lenet5
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    89 |
+| Unused register locations in slices containing registers |   346 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      8 |           31 |
+|     10 |           56 |
+|    16+ |            1 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             132 |           37 |
+| Yes          | No                    | No                     |             288 |           41 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             520 |           73 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+------------------------------+----------------------+------------------+----------------+
+| Clock Signal |         Enable Signal        |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++--------------+------------------------------+----------------------+------------------+----------------+
+|  ap_clk      |                              |                      |                2 |              4 |
+|  ap_clk      | k_19_reg_678[3]_i_2_n_0      | k_19_reg_678         |                2 |              8 |
+|  ap_clk      | k_3_reg_326[3]_i_2_n_0       | k_3_reg_326          |                1 |              8 |
+|  ap_clk      | k_2_reg_304[3]_i_2_n_0       | k_2_reg_304          |                1 |              8 |
+|  ap_clk      | k_27_reg_854[3]_i_2_n_0      | k_27_reg_854         |                2 |              8 |
+|  ap_clk      | k_25_reg_810[3]_i_2_n_0      | k_25_reg_810         |                2 |              8 |
+|  ap_clk      | k_24_reg_788[3]_i_2_n_0      | k_24_reg_788         |                1 |              8 |
+|  ap_clk      | k_22_reg_744[3]_i_2_n_0      | k_22_reg_744         |                2 |              8 |
+|  ap_clk      | k_21_reg_722[3]_i_2_n_0      | k_21_reg_722         |                1 |              8 |
+|  ap_clk      | k_20_reg_700[3]_i_2_n_0      | k_20_reg_700         |                1 |              8 |
+|  ap_clk      | k_4_reg_348[3]_i_2_n_0       | k_4_reg_348          |                1 |              8 |
+|  ap_clk      | ap_CS_fsm_state64            |                      |                1 |              8 |
+|  ap_clk      | ap_CS_fsm_state65            | ap_NS_fsm130_out     |                1 |              8 |
+|  ap_clk      | k_17_reg_634[3]_i_2_n_0      | k_17_reg_634         |                2 |              8 |
+|  ap_clk      | k_16_reg_612[3]_i_2_n_0      | k_16_reg_612         |                1 |              8 |
+|  ap_clk      | k_13_reg_546[3]_i_2_n_0      | k_13_reg_546         |                2 |              8 |
+|  ap_clk      | k_10_reg_480[3]_i_2_n_0      | k_10_reg_480         |                2 |              8 |
+|  ap_clk      | k_9_reg_458[3]_i_2_n_0       | k_9_reg_458          |                1 |              8 |
+|  ap_clk      | k_5_reg_370[3]_i_2_n_0       | k_5_reg_370          |                1 |              8 |
+|  ap_clk      | k_14_reg_568[3]_i_2_n_0      | k_14_reg_568         |                2 |              8 |
+|  ap_clk      | k_8_reg_436[3]_i_2_n_0       | k_8_reg_436          |                1 |              8 |
+|  ap_clk      | k_11_reg_502[3]_i_2_n_0      | k_11_reg_502         |                1 |              8 |
+|  ap_clk      | k_12_reg_524[3]_i_2_n_0      | k_12_reg_524         |                2 |              8 |
+|  ap_clk      | k_7_reg_414[3]_i_2_n_0       | k_7_reg_414          |                2 |              8 |
+|  ap_clk      | k_26_reg_832[3]_i_2_n_0      | k_26_reg_832         |                1 |              8 |
+|  ap_clk      | k_23_reg_766[3]_i_2_n_0      | k_23_reg_766         |                2 |              8 |
+|  ap_clk      | k_s_reg_282[3]_i_2_n_0       | k_s_reg_282          |                1 |              8 |
+|  ap_clk      | k_18_reg_656[3]_i_2_n_0      | k_18_reg_656         |                1 |              8 |
+|  ap_clk      | k_15_reg_590[3]_i_2_n_0      | k_15_reg_590         |                1 |              8 |
+|  ap_clk      | img_in_TREADY_INST_0_i_1_n_0 | k_reg_260[3]_i_1_n_0 |                2 |              8 |
+|  ap_clk      | invdar_reg_2380              | invdar_reg_238       |                1 |              8 |
+|  ap_clk      | k_6_reg_392[3]_i_2_n_0       | k_6_reg_392          |                2 |              8 |
+|  ap_clk      | ap_NS_fsm189_out             | j_7_reg_403          |                1 |             10 |
+|  ap_clk      | ap_NS_fsm192_out             | j_6_reg_381          |                1 |             10 |
+|  ap_clk      | ap_NS_fsm174_out             | j_12_reg_513         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm186_out             | j_8_reg_425          |                1 |             10 |
+|  ap_clk      | ap_NS_fsm183_out             | j_9_reg_447          |                1 |             10 |
+|  ap_clk      | ap_NS_fsm180_out             | j_10_reg_469         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm177_out             | j_11_reg_491         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm159_out             | j_17_reg_623         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm195_out             | j_5_reg_359          |                1 |             10 |
+|  ap_clk      | ap_NS_fsm198_out             | j_4_reg_337          |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state28            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state12            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state18            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state14            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state22            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state24            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state10            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state42            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state60            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state58            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state56            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state54            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state52            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state50            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state48            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state46            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state44            |                      |                2 |             10 |
+|  ap_clk      | ap_NS_fsm168_out             | j_14_reg_557         |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state40            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state38            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state36            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state34            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state32            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state30            |                      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state26            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state20            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state16            |                      |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state8             |                      |                1 |             10 |
+|  ap_clk      | ap_NS_fsm171_out             | j_13_reg_535         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm165_out             | j_15_reg_579         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm162_out             | j_16_reg_601         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm156_out             | j_18_reg_645         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm153_out             | j_19_reg_667         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm150_out             | j_20_reg_689         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm147_out             | j_21_reg_711         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm144_out             | j_22_reg_733         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm141_out             | j_23_reg_755         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm138_out             | j_24_reg_777         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm135_out             | j_25_reg_799         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm132_out             | j_26_reg_821         |                1 |             10 |
+|  ap_clk      | ap_NS_fsm129_out             | j_27_reg_843         |                2 |             10 |
+|  ap_clk      | ap_NS_fsm1110_out            | j_reg_249            |                2 |             10 |
+|  ap_clk      | ap_NS_fsm1107_out            | j_s_reg_271          |                1 |             10 |
+|  ap_clk      | ap_NS_fsm1104_out            | j_2_reg_293          |                1 |             10 |
+|  ap_clk      | ap_NS_fsm1101_out            | j_3_reg_315          |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state62            |                      |                2 |             10 |
+|  ap_clk      |                              | ap_rst_n_inv         |               37 |            132 |
++--------------+------------------------------+----------------------+------------------+----------------+
+
+

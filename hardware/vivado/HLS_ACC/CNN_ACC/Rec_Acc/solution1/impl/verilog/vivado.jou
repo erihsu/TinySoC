@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 12 10:26:39 2019
+# Process ID: 21767
+# Current directory: /home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog
+# Command line: vivado -notrace -mode batch -source run_vivado.tcl
+# Log file: /home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/vivado.log
+# Journal file: /home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace

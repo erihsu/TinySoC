@@ -1,0 +1,103 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'lenet5'" level="0">
+<item name = "Date">Fri Jul 12 10:26:17 2019
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">Rec_Acc</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a100tcsg324-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">40.00, 5.825, 5.00</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">12, 9473, 12, 9473, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- memset_sum">9, 9, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L1_2">336, 336, 12, -, -, 28, no</column>
+<column name=" + L1_3">10, 10, 1, -, -, 10, no</column>
+<column name="- L2_1">20, 20, 2, -, -, 10, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="lenet5" xd:componentRef="lenet5" xd:initiationInterval="9474" xd:clockPeriod="40.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="img_in-&gt;data" xd:originalName="img_in" xd:direction="in" xd:interfaceRef="img_in" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="img_in-&gt;keep" xd:originalName="img_in" xd:direction="in" xd:interfaceRef="img_in" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="img_in-&gt;last" xd:originalName="img_in" xd:direction="in" xd:interfaceRef="img_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="img_in-&gt;user" xd:originalName="img_in" xd:direction="in" xd:interfaceRef="img_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(result)" xd:originalName="result" xd:direction="out" xd:interfaceRef="result_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="4" xd:firstOut="36"/>
+  <xd:arg xd:name="enable" xd:originalName="enable" xd:direction="in" xd:interfaceRef="enable_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="36"/>
+  <xd:arg xd:name="clear" xd:originalName="clear" xd:direction="in" xd:interfaceRef="clear_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="36"/>
+  <xd:latencyEstimates xd:best-case="12" xd:worst-case="9473" xd:average-case="4743"/>
+  <xd:resourceEstimates xd:LUT="2412" xd:FF="494" xd:BRAM="1" xd:DSP="0"/>
+</xd:acceleratorMap>

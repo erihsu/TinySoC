@@ -1,0 +1,30 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="lenet5" label="L1_1" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="lenet5" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="off" value="" positionalBoolean="register_mode"/>
+                <option name="port" value="img_in" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="lenet5" label="L0" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="lenet5" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_ctrl_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="return" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="lenet5" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_vld" value="" positionalBoolean="mode"/>
+                <option name="port" value="result" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

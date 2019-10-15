@@ -1,0 +1,774 @@
+
+*** Running vivado
+    with args -log lenet5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lenet5.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source lenet5.tcl -notrace
+Command: synth_design -top lenet5 -part xc7a100tcsg324-1 -directive sdx_optimization_effort_high -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21860 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1313.234 ; gain = 87.895 ; free physical = 1157 ; free virtual = 4842
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lenet5' [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 66'b000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 66'b000000000000000000000000000000000000000000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 66'b000000000000000000000000000000000000000000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 66'b000000000000000000000000000000000000000000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 66'b000000000000000000000000000000000000000000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 66'b000000000000000000000000000000000000000000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 66'b000000000000000000000000000000000000000000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 66'b000000000000000000000000000000000000000000000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 66'b000000000000000000000000000000000000000000000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 66'b000000000000000000000000000000000000000000000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 66'b000000000000000000000000000000000000000000000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 66'b000000000000000000000000000000000000000000000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 66'b000000000000000000000000000000000000000000000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 66'b000000000000000000000000000000000000000000000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 66'b000000000000000000000000000000000000000000000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 66'b000000000000000000000000000000000000000000000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 66'b000000000000000000000000000000000000000000000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 66'b000000000000000000000000000000000000000000000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 66'b000000000000000000000000000000000000000000000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 66'b000000000000000000000000000000000000000000000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 66'b000000000000000000000000000000000000000000000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 66'b000000000000000000000000000000000000000000001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 66'b000000000000000000000000000000000000000000010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 66'b000000000000000000000000000000000000000000100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 66'b000000000000000000000000000000000000000001000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 66'b000000000000000000000000000000000000000010000000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 66'b000000000000000000000000000000000000000100000000000000000000000000 
+	Parameter ap_ST_fsm_state28 bound to: 66'b000000000000000000000000000000000000001000000000000000000000000000 
+	Parameter ap_ST_fsm_state29 bound to: 66'b000000000000000000000000000000000000010000000000000000000000000000 
+	Parameter ap_ST_fsm_state30 bound to: 66'b000000000000000000000000000000000000100000000000000000000000000000 
+	Parameter ap_ST_fsm_state31 bound to: 66'b000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter ap_ST_fsm_state32 bound to: 66'b000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter ap_ST_fsm_state33 bound to: 66'b000000000000000000000000000000000100000000000000000000000000000000 
+	Parameter ap_ST_fsm_state34 bound to: 66'b000000000000000000000000000000001000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state35 bound to: 66'b000000000000000000000000000000010000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state36 bound to: 66'b000000000000000000000000000000100000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state37 bound to: 66'b000000000000000000000000000001000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state38 bound to: 66'b000000000000000000000000000010000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state39 bound to: 66'b000000000000000000000000000100000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state40 bound to: 66'b000000000000000000000000001000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state41 bound to: 66'b000000000000000000000000010000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state42 bound to: 66'b000000000000000000000000100000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state43 bound to: 66'b000000000000000000000001000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state44 bound to: 66'b000000000000000000000010000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state45 bound to: 66'b000000000000000000000100000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state46 bound to: 66'b000000000000000000001000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state47 bound to: 66'b000000000000000000010000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state48 bound to: 66'b000000000000000000100000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state49 bound to: 66'b000000000000000001000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state50 bound to: 66'b000000000000000010000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state51 bound to: 66'b000000000000000100000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state52 bound to: 66'b000000000000001000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state53 bound to: 66'b000000000000010000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state54 bound to: 66'b000000000000100000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state55 bound to: 66'b000000000001000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state56 bound to: 66'b000000000010000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state57 bound to: 66'b000000000100000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state58 bound to: 66'b000000001000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state59 bound to: 66'b000000010000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state60 bound to: 66'b000000100000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state61 bound to: 66'b000001000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state62 bound to: 66'b000010000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state63 bound to: 66'b000100000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state64 bound to: 66'b001000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state65 bound to: 66'b010000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state66 bound to: 66'b100000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5.v:112]
+INFO: [Synth 8-6157] synthesizing module 'lenet5_sum' [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5_sum.v:62]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter AddressRange bound to: 10 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'lenet5_sum_ram' [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5_sum.v:9]
+	Parameter DWIDTH bound to: 1 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5_sum.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'lenet5_sum_ram' (1#1) [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5_sum.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'lenet5_sum' (2#1) [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5_sum.v:62]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5.v:2199]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5.v:2203]
+INFO: [Synth 8-6155] done synthesizing module 'lenet5' (3#1) [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5.v:12]
+WARNING: [Synth 8-3331] design lenet5_sum has unconnected port reset
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[31]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[30]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[29]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[28]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[27]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[26]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[25]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[24]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[23]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[22]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[21]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[20]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[19]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[18]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[17]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[16]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[15]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[14]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[13]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[12]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[11]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[10]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[9]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[8]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[7]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[6]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[5]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[4]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[3]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[2]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[1]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[0]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TKEEP[3]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TKEEP[2]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TKEEP[1]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TKEEP[0]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TLAST[0]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TUSER[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1360.859 ; gain = 135.520 ; free physical = 1165 ; free virtual = 4851
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1360.859 ; gain = 135.520 ; free physical = 1166 ; free virtual = 4851
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1360.859 ; gain = 135.520 ; free physical = 1166 ; free virtual = 4851
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5.xdc]
+Finished Parsing XDC File [/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/lenet5.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1722.680 ; gain = 0.000 ; free physical = 886 ; free virtual = 4571
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 976 ; free virtual = 4662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 976 ; free virtual = 4662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 979 ; free virtual = 4664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond4_fu_943_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_26_fu_1591_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_25_fu_1567_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_24_fu_1543_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_23_fu_1519_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_22_fu_1495_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_21_fu_1471_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_20_fu_1447_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_19_fu_1423_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_18_fu_1399_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_17_fu_1375_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_16_fu_1351_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_15_fu_1327_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_14_fu_1303_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_13_fu_1279_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_12_fu_1255_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_11_fu_1231_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_10_fu_1207_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_s_fu_1183_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_9_fu_1159_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_8_fu_1135_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_7_fu_1111_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_6_fu_1087_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_5_fu_1063_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_4_fu_1039_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_3_fu_1015_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_2_fu_991_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_1_fu_967_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_1_fu_925_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond3_fu_931_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_1_fu_955_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_2_fu_979_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_3_fu_1003_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_4_fu_1027_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_5_fu_1051_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_6_fu_1075_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_7_fu_1099_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_8_fu_1123_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_9_fu_1147_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_s_fu_1171_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_10_fu_1195_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_11_fu_1219_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_12_fu_1243_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_13_fu_1267_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_14_fu_1291_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_15_fu_1315_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_16_fu_1339_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_17_fu_1363_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_18_fu_1387_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_19_fu_1411_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_20_fu_1435_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_21_fu_1459_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_22_fu_1483_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_23_fu_1507_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_24_fu_1531_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_25_fu_1555_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_26_fu_1579_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exitcond_fu_1603_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_fu_943_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_26_fu_1591_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_25_fu_1567_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_24_fu_1543_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_23_fu_1519_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_22_fu_1495_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_21_fu_1471_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_20_fu_1447_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_19_fu_1423_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_18_fu_1399_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_17_fu_1375_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_16_fu_1351_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_15_fu_1327_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_14_fu_1303_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_13_fu_1279_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_12_fu_1255_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_11_fu_1231_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_10_fu_1207_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_s_fu_1183_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_9_fu_1159_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_8_fu_1135_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_7_fu_1111_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_6_fu_1087_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_5_fu_1063_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_4_fu_1039_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_3_fu_1015_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_2_fu_991_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_1_fu_967_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_1_fu_925_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond3_fu_931_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_1_fu_955_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_2_fu_979_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_3_fu_1003_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_4_fu_1027_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_5_fu_1051_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_6_fu_1075_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_7_fu_1099_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_8_fu_1123_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_9_fu_1147_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_s_fu_1171_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_10_fu_1195_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_11_fu_1219_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_12_fu_1243_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_13_fu_1267_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_14_fu_1291_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_15_fu_1315_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_16_fu_1339_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_17_fu_1363_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_18_fu_1387_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_19_fu_1411_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_20_fu_1435_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_21_fu_1459_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_22_fu_1483_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_23_fu_1507_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_24_fu_1531_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_25_fu_1555_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_26_fu_1579_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exitcond_fu_1603_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 970 ; free virtual = 4657
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 28    
+	   2 Input      4 Bit       Adders := 30    
++---Registers : 
+	               66 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 56    
+	                4 Bit    Registers := 33    
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               10 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input     62 Bit        Muxes := 1     
+	   2 Input     61 Bit        Muxes := 1     
+	   2 Input     60 Bit        Muxes := 1     
+	   2 Input     59 Bit        Muxes := 1     
+	   2 Input     58 Bit        Muxes := 1     
+	   2 Input     57 Bit        Muxes := 1     
+	   2 Input     56 Bit        Muxes := 1     
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     54 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     52 Bit        Muxes := 1     
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 1     
+	   2 Input     46 Bit        Muxes := 1     
+	   2 Input     45 Bit        Muxes := 1     
+	   2 Input     44 Bit        Muxes := 1     
+	   2 Input     43 Bit        Muxes := 1     
+	   2 Input     42 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 1     
+	   2 Input     38 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 58    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lenet5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 28    
+	   2 Input      4 Bit       Adders := 30    
++---Registers : 
+	               66 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 56    
+	                4 Bit    Registers := 33    
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input     62 Bit        Muxes := 1     
+	   2 Input     61 Bit        Muxes := 1     
+	   2 Input     60 Bit        Muxes := 1     
+	   2 Input     59 Bit        Muxes := 1     
+	   2 Input     58 Bit        Muxes := 1     
+	   2 Input     57 Bit        Muxes := 1     
+	   2 Input     56 Bit        Muxes := 1     
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     54 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     52 Bit        Muxes := 1     
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 1     
+	   2 Input     46 Bit        Muxes := 1     
+	   2 Input     45 Bit        Muxes := 1     
+	   2 Input     44 Bit        Muxes := 1     
+	   2 Input     43 Bit        Muxes := 1     
+	   2 Input     42 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 1     
+	   2 Input     38 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 58    
+Module lenet5_sum_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               10 Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[31]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[30]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[29]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[28]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[27]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[26]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[25]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[24]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[23]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[22]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[21]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[20]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[19]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[18]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[17]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[16]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[15]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[14]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[13]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[12]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[11]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[10]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[9]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[8]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[7]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[6]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[5]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[4]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[3]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[2]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[1]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TDATA[0]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TKEEP[3]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TKEEP[2]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TKEEP[1]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TKEEP[0]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TLAST[0]
+WARNING: [Synth 8-3331] design lenet5 has unconnected port img_in_TUSER[0]
+INFO: [Synth 8-3971] The signal sum_U/lenet5_sum_ram_U/ram_reg was recognized as a true dual port RAM template.
+Removed BRAM instance from module lenet5 due to constant propagation
+Removed 1 RAM instances from module lenet5 due to constant propagation
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[0]' (FDRE) to 'max_reg_889_reg[1]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[1]' (FDRE) to 'max_reg_889_reg[2]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[2]' (FDRE) to 'max_reg_889_reg[3]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[3]' (FDRE) to 'max_reg_889_reg[4]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[4]' (FDRE) to 'max_reg_889_reg[5]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[5]' (FDRE) to 'max_reg_889_reg[6]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[6]' (FDRE) to 'max_reg_889_reg[7]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[7]' (FDRE) to 'max_reg_889_reg[8]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[8]' (FDRE) to 'max_reg_889_reg[9]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[9]' (FDRE) to 'max_reg_889_reg[10]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[10]' (FDRE) to 'max_reg_889_reg[11]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[11]' (FDRE) to 'max_reg_889_reg[12]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[12]' (FDRE) to 'max_reg_889_reg[13]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[13]' (FDRE) to 'max_reg_889_reg[14]'
+INFO: [Synth 8-3886] merging instance 'max_reg_889_reg[14]' (FDRE) to 'max_reg_889_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\max_reg_889_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_s_reg_865_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_s_reg_865_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_s_reg_865_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_s_reg_865_reg[3] )
+INFO: [Synth 8-3886] merging instance 'storemerge_reg_901_reg[0]' (FDRE) to 'storemerge_reg_901_reg[1]'
+INFO: [Synth 8-3886] merging instance 'storemerge_reg_901_reg[1]' (FDRE) to 'storemerge_reg_901_reg[2]'
+INFO: [Synth 8-3886] merging instance 'storemerge_reg_901_reg[2]' (FDRE) to 'storemerge_reg_901_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (max_reg_889_reg[15]) is unused and will be removed from module lenet5.
+WARNING: [Synth 8-3332] Sequential element (p_s_reg_865_reg[3]) is unused and will be removed from module lenet5.
+WARNING: [Synth 8-3332] Sequential element (p_s_reg_865_reg[2]) is unused and will be removed from module lenet5.
+WARNING: [Synth 8-3332] Sequential element (p_s_reg_865_reg[1]) is unused and will be removed from module lenet5.
+WARNING: [Synth 8-3332] Sequential element (p_s_reg_865_reg[0]) is unused and will be removed from module lenet5.
+WARNING: [Synth 8-3332] Sequential element (storemerge_reg_901_reg[3]) is unused and will be removed from module lenet5.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 950 ; free virtual = 4639
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 824 ; free virtual = 4513
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 807 ; free virtual = 4496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 804 ; free virtual = 4493
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 805 ; free virtual = 4494
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 805 ; free virtual = 4494
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 805 ; free virtual = 4494
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 805 ; free virtual = 4494
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 805 ; free virtual = 4494
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 805 ; free virtual = 4494
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|lenet5      | ap_CS_fsm_reg[5] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |    59|
+|2     |LUT2   |    60|
+|3     |LUT3   |    62|
+|4     |LUT4   |   144|
+|5     |LUT5   |   112|
+|6     |LUT6   |    93|
+|7     |SRL16E |     1|
+|8     |FDRE   |   470|
+|9     |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1002|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 805 ; free virtual = 4494
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1722.680 ; gain = 135.520 ; free physical = 861 ; free virtual = 4550
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1722.680 ; gain = 497.340 ; free physical = 861 ; free virtual = 4550
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-101] Netlist 'lenet5' is not ideal for floorplanning, since the cellview 'lenet5' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+200 Infos, 86 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.688 ; gain = 516.906 ; free physical = 867 ; free virtual = 4555
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/project.runs/synth_1/lenet5.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lenet5_utilization_synth.rpt -pb lenet5_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1754.699 ; gain = 0.000 ; free physical = 867 ; free virtual = 4556
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 12 10:27:19 2019...

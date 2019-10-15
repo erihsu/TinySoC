@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 12 10:26:46 2019
+# Process ID: 21855
+# Current directory: /home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/project.runs/synth_1
+# Command line: vivado -log lenet5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lenet5.tcl
+# Log file: /home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/project.runs/synth_1/lenet5.vds
+# Journal file: /home/eric/Documents/for_competition/HLS_ACC/CNN_ACC/Rec_Acc/solution1/impl/verilog/project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source lenet5.tcl -notrace
