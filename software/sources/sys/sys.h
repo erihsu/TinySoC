@@ -4,7 +4,9 @@
 #include "xgpio.h"
 #include "xparameters.h"
 #include "xuartlite.h"
-#define SYSCLK 25
+#include "xil_printf.h"
+
+#define SYSCLK 40
 
 #define SYSTICK_CAL     (*((volatile unsigned long *)0xE000E01C)) 
 #define SYSTICK_VAL     (*((volatile unsigned long *)0xE000E018)) 
@@ -19,6 +21,11 @@
 #define     __O     volatile  
 #define     __IO    volatile
 
+extern XGpio ACC;
+extern XGpio RST;
+
+extern int flag;
+extern char char_result;
 typedef struct
 {
   __IO uint32_t ISER[8];                 /*!< Offset: 0x000 (R/W)  Interrupt Set Enable Register           */
@@ -54,6 +61,8 @@ void delay_us(u32 nus);
 
 void delay_ms(u16 nms);
 
+void debug(const uint8_t *s, ...);
+
 void SNVIC_ClearAllPendingIRQ();
 
 void SNVIC_EnableIRQ(u32 IRQn);
@@ -70,5 +79,25 @@ void NUM6_Handler();
 void NUM7_Handler();
 void NUM8_Handler();
 void NUM9_Handler();
+
+void set_IO(XGpio* gpio,u8 channel,u8 pin);
+void reset_IO(XGpio* gpio,u8 channel,u8 pin);
+
+#define ACC_ENABLE_HIGH set_IO(&ACC,1,0)
+#define ACC_ENABLE_LOW reset_IO(&ACC,1,0)
+
+#define ACC_CLEAR_HIGH 	set_IO(&ACC,1,1)
+#define ACC_CLEAR_LOW 	reset_IO(&ACC,1,1)
+
+
+#define ACC_RST_HIGH				set_IO(&RST,1,2)
+#define ACC_RST_LOW					reset_IO(&RST,1,2)
+
+#define VIN_RST_HIGH				set_IO(&RST,1,0)
+#define VIN_RST_LOW					reset_IO(&RST,1,0)
+
+#define DMA_RST_HIGH				set_IO(&RST,1,1)
+#define DMA_RST_LOW					reset_IO(&RST,1,1)
+	
 
 #endif
