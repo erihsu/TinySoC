@@ -1,2 +1,0 @@
-lenet5_sum
-lenet5
