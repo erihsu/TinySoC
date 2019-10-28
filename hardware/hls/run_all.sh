@@ -17,3 +17,5 @@ bash ./make_IP.sh
 # go back to hls
 cd ..
 echo "exit from generating"
+
+exit
